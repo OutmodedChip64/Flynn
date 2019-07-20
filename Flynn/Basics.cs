@@ -15,5 +15,16 @@ namespace Flynn
                 theMethod.Invoke(this, null);
             }
         }
+
+        public void AlternateBool(bool boolean)
+        {
+            if (boolean)
+            {
+                boolean = false;
+            } else if (!boolean)
+            {
+                boolean = true;
+            }
+        }
     }
 }
